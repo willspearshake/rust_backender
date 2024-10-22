@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "8a760344-2cb7-4e6f-aa7f-305301a302ef",
+		"name": "Rust Backender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19777832"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/hello/Matteo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello",
+						"Matteo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "people",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"first_name\": \"Matteo\",\r\n    \"last_name\": \"Black\",\r\n    \"person_id\": 1,\r\n    \"age\":  32,\r\n    \"address\": \"Via dei tigli\",\r\n    \"city\": \"London\"\r\n    \r\n},\r\n{\r\n    \"first_name\": \"Jack\",\r\n    \"person_id\": 2,\r\n    \"age\":  19\r\n    \r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/people",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
